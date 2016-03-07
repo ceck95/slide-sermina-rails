@@ -35,13 +35,12 @@
 <h1 style="text-align: left;"><span style="font-size:1.0em">View Helper</span></h1>
 </div></div>
 
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 880px; left: 0px; top: 212px;" data-block-id="de38d532ef811e4be8085a16a642318a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 880px; left: -200px; top: 210px;" data-block-id="de38d532ef811e4be8085a16a642318a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
 <ol>
 	<li style="text-align:left"><span style="font-size:1.2em"> Using Templates</span></li>
 	<li style="text-align:left"><span style="font-size:1.2em"> Generating Forms</span></li>
 	<li style="text-align:left"><span style="font-size:1.2em"> Processing Forms</span></li>
 	<li style="text-align:left"><span style="font-size:1.2em"> Using Helpers</span></li>
-	<li style="text-align:left"><span style="font-size:1.2em"> Reducing Maintenance with Layouts and Partials</span></li>
 </ol>
 </div></div></section><section class="stack" data-id="d7af334566e2d230c7eccfd29fae41d1"><section data-id="71c3c1d5c0e55a5ea3dbcffb14a54504"><div class="sl-block" data-block-type="text" style="width: 931px; left: 0px; top: 10px; height: auto;" data-block-id="cd184525f885833e495f3c5c752f9f5a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
 <h1 style="text-align:left"><span style="color:rgb(51, 51, 51); text-align:left">1. Using Templates</span></h1>
@@ -200,81 +199,6 @@ encode: "javascript") %&gt;
 &lt;%= auto_discovery_link_tag(:atom, products_url(format: 'atom')) %&gt;</code></pre></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: -200px; top: 101px;" data-block-id="5f4c3e2a36b3381bc2a27e48a675bdb3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
 <p>Example:</p>
-</div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 931px; left: 0px; top: 10px; height: auto;" data-block-id="5015f339f55fc2385c8069417df5b379"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
-<h1 style="text-align:left">
-<span style="color:rgb(51, 51, 51); text-align:left"><span style="font-size:0.9em">5</span>. </span><span style="font-size:0.5em">GIẢM THIỂU VIỆC BẢO TRÌ VỚI LAYOUTS VÀ PARTIALS</span>
-</h1>
-</div></div>
-
-
-
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 954px; left: 6px; top: 210px;" data-block-id="baf1888cdbc40d5f7e0efed81dd60c6c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
-<p style="text-align: left;"><strong>CÓ RẤT NHIỀU SỰ LẶP ĐI LẶP LẠI CÁC THÀNH PHẦN TRONG MỘT WEBSITE</strong></p>
-
-<ul>
-	<li>
-	<p>Nhiều trang với cùng thanh navigation, footer, side-bar…</p>
-	</li>
-	<li>
-	<p>Cùng một chức năng nhưng xuất hiện ở nhiều phần trên trang web</p>
-	</li>
-</ul>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 940px; left: 20px; top: 435px;" data-block-id="513e6614dc0c1a56e783ce5e1e8b7840"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
-<p style="text-align: left;"><strong>RAILS &amp; DRY ( Don’t Repeat Yourself)</strong></p>
-
-<ul>
-	<li>
-	<p>Rails cung cấp layouts và partial để loại bỏ việc lặp đi lặp lại của các thành phần khi viết chương trình</p>
-	</li>
-</ul>
-</div></div></section><section>
-
-
-
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 0px; top: 29px;" data-block-id="b5f591736b480ae09fd28c007092ac13"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
-<p><strong>LAYOUTS</strong></p>
-
-<ul>
-	<li>
-	<p>Khi rails nhận request từ một controller, thực chất nó sẽ trả về hai template.</p>
-	</li>
-	<li>
-	<p>Đường dẫn tới file layout thường rails sẽ mặc định và có thể thay đổi được.</p>
-	</li>
-	<li>
-	<p>Rails cũng cung cấp sự thay đổi linh động giữa các layout.</p>
-	</li>
-	<li>
-	<p>Ta cũng có thể thay đổi nội dung thành phần layout ở từng trang riêng biệt thông qua content_for</p>
-	</li>
-</ul>
-</div></div>
-<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 405px; height: 355.93px; left: 593px; top: 74.035px;" data-block-id="7b0df65585317d139399abefb66c9af2"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="586" data-natural-height="515" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/460473/images/2303722/a.png"></div></div></section><section><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: -6px; top: 70px;" data-block-id="63193226e89d5a04ac7591928f550973"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
-<p style="text-align: left;"><strong>PARTIALS</strong></p>
-
-<ul>
-	<li>
-	<p>Các ứng dụng trên web thường hiển thị cùng một thông tin trên nhiều trang</p>
-	</li>
-	<li>
-	<p>Tên phải bắt đầu bằng kí tự gạch dưới</p>
-	</li>
-</ul>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 120px; top: 280px;" data-block-id="580c9b3eb582508d327c8d4d5edb3841"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
-<p><strong>views/app/views/partial/_list.html.erb</strong></p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 654px; left: 120px; top: 410px;" data-block-id="d2c1860238a6241f61a6aceeece8d19e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
-<p><strong>views/app/views/partial/_animal.html.erb</strong></p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 89px; top: 508px;" data-block-id="885289d5c07c2ddf05ad8b7d8a533248"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
-<p>   <strong> Có thể render partial cùng với layout</strong></p>
-</div></div>
-<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 360px; height: 20.5323px; left: 131px; top: 460px;" data-block-id="576c06f4e69893a5eb3e01dd190151d6"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="263" data-natural-height="15" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/460473/images/2303747/c.png"></div></div>
-<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 360px; height: 46.0358px; left: 140px; top: 342px;" data-block-id="d82fbd0f02dda7526c6f6a60c932603a"><div class="sl-block-content" style="z-index: 16;"><img data-natural-width="391" data-natural-height="50" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/460473/images/2303748/b.png"></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 745px; left: 128px; top: 560px;" data-block-id="894ad18c8da29fd7f2f160b862ba754d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;">
-<p>&lt;<em>%= render partial: "user", layout: "administrator" %&gt;</em></p>
 </div></div></section></section><section class="stack" data-id="e5f6339bce0900595ec7afd38e0e53a6"><section data-id="89e453e8de8bea283f41a69fb51604dc">
 
 
